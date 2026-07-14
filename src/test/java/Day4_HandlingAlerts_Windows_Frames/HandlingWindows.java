@@ -32,6 +32,9 @@ public class HandlingWindows {
 			}
 
 		}
+		
+		driver.switchTo().window(parentWindow);
+		driver.findElement(By.cssSelector("#tryhome")).click();
 
 //		Iterator<String> it = allWindows.iterator();
 //		while(it.hasNext()) {
