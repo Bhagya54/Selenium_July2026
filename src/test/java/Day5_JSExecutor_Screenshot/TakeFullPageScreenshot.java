@@ -12,9 +12,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class TakescreenshotDemo {
+public class TakeFullPageScreenshot {
 	static WebDriver driver;
 
 	public static void takePageScreenshot() throws IOException {
@@ -24,31 +25,20 @@ public class TakescreenshotDemo {
 		FileUtils.copyFile(src, new File("./src/test/resources/screenshots/"+fileName));
 
 	}
-
 	
-	public static void takeElementScreenshot(WebElement ele) throws IOException {
+	public static void takeFullPageScreenshot() throws IOException {
 		Date d = new Date();
-		String fileName="Ele_"+d.toString().replace(" ","_").replace(":","_")+".png";
-		File src = ((TakesScreenshot) ele).getScreenshotAs(OutputType.FILE);
+		String fileName=d.toString().replace(" ","_").replace(":","_")+".png";
+		File src = ((FirefoxDriver) driver).getFullPageScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("./src/test/resources/screenshots/"+fileName));
 
 	}
+
 	public static void main(String[] args) throws IOException {
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_submit_get");
-		// driver.switchTo().frame("iframeResult");
-		WebElement frameElement = driver.findElement(By.id("iframeResult"));
-		driver.switchTo().frame(frameElement);
-		WebElement element = driver.findElement(By.xpath("//button[text()='Try it']"));
-		((JavascriptExecutor) driver).executeScript(
-				"arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
-
-		takePageScreenshot();
-
-		takeElementScreenshot(element);
-		driver.get("https://google.com");
-		takePageScreenshot();
+		driver.get("https://www.redbus.com/");
+		takeFullPageScreenshot();
 	}
 
 }
