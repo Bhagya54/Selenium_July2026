@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BasicTestNgSuite">
+<groups>
+	<run>
+		<include name="smoke"></include>
+		<exclude name="sanity"></exclude>
+	</run>
+</groups>
+  <test thread-count="5" name="Priority_SoftAssert">
+    <classes>
+      <class name="Day6_TestNGTestcases.Priority_Demo"/>
+      <class name="Day6_TestNGTestcases.SoftAssertDemo"/>  
+    </classes>
+  </test> <!-- BasicTest -->
+  
+  <test thread-count="5" name="Assertion_Annotation">
+    <classes>
+      <class name="Day6_TestNGTestcases.Assertion_TestNG"/>
+      <class name="Day6_TestNGTestcases.Annotations_TestNG"/>  
+    </classes>
+  </test>
+</suite> <!-- BasicTestNgSuite -->

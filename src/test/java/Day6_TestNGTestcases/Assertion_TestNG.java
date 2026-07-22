@@ -3,6 +3,7 @@ package Day6_TestNGTestcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class Assertion_TestNG {
@@ -14,7 +15,7 @@ public class Assertion_TestNG {
  */
 	
 	WebDriver driver;
-	@Test
+	@Test(groups = {"regression"})
 	public void verifyTitle() {
 		Assert.assertEquals(12,12);
 		System.out.println("Verified 2 integer values");
@@ -29,4 +30,16 @@ public class Assertion_TestNG {
 		
 		System.out.println("Comparision between 2 titles");
 	}
+	
+	
+	@Test(groups = {"smoke"})
+	public void doFailure() {
+		Assert.fail("Intentianal Failure");
+	}
+	
+	@Test(groups = {"sanity"})
+	public void doSkip() {
+		throw new SkipException("Intentional Skipping of testcase");
+	}
+	
 }

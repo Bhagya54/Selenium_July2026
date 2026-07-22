@@ -51,13 +51,13 @@ public class Annotations_TestNG {
 		System.out.println("Close chrome browser");
 	}
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void doLogin() {
 		System.out.println("Login Successful");
 	}
 	
 	
-	@Test
+	@Test(groups = {"smoke","sanity"})
 	public void doUserReg() {
 		System.out.println("Registration Successful");
 	}

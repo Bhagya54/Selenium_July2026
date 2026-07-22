@@ -6,6 +6,8 @@
       <class name="Day6_TestNGTestcases.Assertion_TestNG">
         <methods>
           <include name="verifyTitle"/>
+          <include name="doFailure"/>
+          <include name="doSkip"/>
         </methods>
       </class> <!-- Day6_TestNGTestcases.Assertion_TestNG -->
     </classes>

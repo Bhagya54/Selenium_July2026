@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  BasicTest</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>BasicTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/5/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 22 18:57:58 IST 2026</td>
+<td>Started on:</td><td>Wed Jul 22 18:34:34 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3059 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9640 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Day6_TestNGTestcases.Assertion_TestNG.doFailure()'><b>doFailure</b><br>Test class: Day6_TestNGTestcases.Assertion_TestNG</td>
-<td><div><pre>java.lang.AssertionError: Intentianal Failure
+<td title='Day6_TestNGTestcases.DependsOnMethod.register()'><b>register</b><br>Test class: Day6_TestNGTestcases.DependsOnMethod</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at Day6_TestNGTestcases.DependsOnMethod.register(DependsOnMethod.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373577787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373577787'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at Day6_TestNGTestcases.Assertion_TestNG.doFailure(Assertion_TestNG.java:37)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at Day6_TestNGTestcases.DependsOnMethod.register(DependsOnMethod.java:10)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -106,8 +113,102 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1646464088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1646464088'><pre>java.lang.AssertionError: Intentianal Failure
+</pre></div></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.DependsOnMethod@784c3487</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.TestCase1.verifyTitle()'><b>verifyTitle</b><br>Test class: Day6_TestNGTestcases.TestCase1</td>
+<td><div><pre>java.lang.AssertionError: expected [google] but found [Google]
+	at Day6_TestNGTestcases.TestCase1.verifyTitle(TestCase1.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1541046463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1541046463'><pre>java.lang.AssertionError: expected [google] but found [Google]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at Day6_TestNGTestcases.TestCase1.verifyTitle(TestCase1.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Day6_TestNGTestcases.TestCase1@1dd6d4b7</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.SoftAssertDemo.verifyTitle()'><b>verifyTitle</b><br>Test class: Day6_TestNGTestcases.SoftAssertDemo</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [12] but found [14],
+	Title are not matching expected [true] but found [false]
+	at Day6_TestNGTestcases.SoftAssertDemo.verifyTitle(SoftAssertDemo.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace119112899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace119112899'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [12] but found [14],
+	Title are not matching expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Day6_TestNGTestcases.SoftAssertDemo.verifyTitle(SoftAssertDemo.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>Day6_TestNGTestcases.SoftAssertDemo@4afcd809</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.Assertion_TestNG.doFailure()'><b>doFailure</b><br>Test class: Day6_TestNGTestcases.Assertion_TestNG</td>
+<td><div><pre>java.lang.AssertionError: Intentianal Failure
+	at Day6_TestNGTestcases.Assertion_TestNG.doFailure(Assertion_TestNG.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1357686726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1357686726'><pre>java.lang.AssertionError: Intentianal Failure
 	at org.testng.Assert.fail(Assert.java:111)
 	at Day6_TestNGTestcases.Assertion_TestNG.doFailure(Assertion_TestNG.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -138,42 +239,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day6_TestNGTestcases.Assertion_TestNG@1aafa419</td></tr>
+<td>Day6_TestNGTestcases.Assertion_TestNG@74e52ef6</td></tr>
 <tr>
 <td title='Day6_TestNGTestcases.Assertion_TestNG.verifyTitle()'><b>verifyTitle</b><br>Test class: Day6_TestNGTestcases.Assertion_TestNG</td>
 <td><div><pre>java.lang.AssertionError: Title are not matching expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
 	at Day6_TestNGTestcases.Assertion_TestNG.verifyTitle(Assertion_TestNG.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace50072771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50072771'><pre>java.lang.AssertionError: Title are not matching expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace579447973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace579447973'><pre>java.lang.AssertionError: Title are not matching expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
@@ -205,8 +278,47 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>2</td>
-<td>Day6_TestNGTestcases.Assertion_TestNG@1aafa419</td></tr>
+<td>3</td>
+<td>Day6_TestNGTestcases.Assertion_TestNG@74e52ef6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Day6_TestNGTestcases.Priority_Demo.login()'><b>login</b><br>Test class: Day6_TestNGTestcases.Priority_Demo</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.Priority_Demo@6b2ea799</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.Annotations_TestNG.doUserReg()'><b>doUserReg</b><br>Test class: Day6_TestNGTestcases.Annotations_TestNG</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.Annotations_TestNG@62ddbd7e</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.TestCase1.doLogin()'><b>doLogin</b><br>Test class: Day6_TestNGTestcases.TestCase1</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.TestCase1@1dd6d4b7</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.Priority_Demo.register()'><b>register</b><br>Test class: Day6_TestNGTestcases.Priority_Demo</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.Priority_Demo@6b2ea799</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.DependsOnMethod.A()'><b>A</b><br>Test class: Day6_TestNGTestcases.DependsOnMethod</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.DependsOnMethod@784c3487</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.Annotations_TestNG.doLogin()'><b>doLogin</b><br>Test class: Day6_TestNGTestcases.Annotations_TestNG</td>
+<td></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.Annotations_TestNG@62ddbd7e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -217,17 +329,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Day6_TestNGTestcases.Assertion_TestNG.doSkip()'><b>doSkip</b><br>Test class: Day6_TestNGTestcases.Assertion_TestNG</td>
-<td><div><pre>org.testng.SkipException: Intentional Skipping of testcase
-	at Day6_TestNGTestcases.Assertion_TestNG.doSkip(Assertion_TestNG.java:42)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+<td title='Day6_TestNGTestcases.DependsOnMethod.login()'><b>login</b><br>Test class: Day6_TestNGTestcases.DependsOnMethod</td>
+<td><div><pre>java.lang.Throwable: Method Day6_TestNGTestcases.DependsOnMethod.login() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487 depends on not successfully finished methods 
+[Day6_TestNGTestcases.DependsOnMethod.A() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487
+Day6_TestNGTestcases.DependsOnMethod.register() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044825144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044825144'><pre>java.lang.Throwable: Method Day6_TestNGTestcases.DependsOnMethod.login() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487 depends on not successfully finished methods 
+[Day6_TestNGTestcases.DependsOnMethod.A() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487
+Day6_TestNGTestcases.DependsOnMethod.register() on instance Day6_TestNGTestcases.DependsOnMethod@784c3487]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -246,8 +357,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1768792843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1768792843'><pre>org.testng.SkipException: Intentional Skipping of testcase
+</pre></div></td>
+<td>0</td>
+<td>Day6_TestNGTestcases.DependsOnMethod@784c3487</td></tr>
+<tr>
+<td title='Day6_TestNGTestcases.Assertion_TestNG.doSkip()'><b>doSkip</b><br>Test class: Day6_TestNGTestcases.Assertion_TestNG</td>
+<td><div><pre>org.testng.SkipException: Intentional Skipping of testcase
+	at Day6_TestNGTestcases.Assertion_TestNG.doSkip(Assertion_TestNG.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501608687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501608687'><pre>org.testng.SkipException: Intentional Skipping of testcase
 	at Day6_TestNGTestcases.Assertion_TestNG.doSkip(Assertion_TestNG.java:42)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -277,7 +396,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day6_TestNGTestcases.Assertion_TestNG@1aafa419</td></tr>
+<td>Day6_TestNGTestcases.Assertion_TestNG@74e52ef6</td></tr>
 </table><p>
 </body>
 </html>
