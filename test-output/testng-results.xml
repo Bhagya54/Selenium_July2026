@@ -1,57 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-22T19:14:46 IST" name="Compatability Test" finished-at="2026-07-22T19:15:05 IST" duration-ms="18390">
+  <suite started-at="2026-07-23T16:25:09 IST" name="Default suite" finished-at="2026-07-23T16:25:28 IST" duration-ms="18536">
     <groups>
     </groups>
-    <test started-at="2026-07-22T19:14:46 IST" name="Chrome Test" finished-at="2026-07-22T19:14:53 IST" duration-ms="7096">
-      <class name="Day6_TestNGTestcases.Parameterization_XML">
-        <test-method signature="openWebsite(java.lang.String,java.lang.String)[pri:0, instance:Day6_TestNGTestcases.Parameterization_XML@1bb5a082]" started-at="2026-07-22T19:14:46 IST" name="openWebsite" finished-at="2026-07-22T19:14:52 IST" duration-ms="5711" status="PASS">
+    <test started-at="2026-07-23T16:25:09 IST" name="Default test" finished-at="2026-07-23T16:25:28 IST" duration-ms="18536">
+      <class name="Day6_TestNGTestcases.Parameterization_DataProvider">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:10 IST" name="setUp" finished-at="2026-07-23T16:25:14 IST" duration-ms="4374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:14 IST" name="doLogin" data-provider="dp" finished-at="2026-07-23T16:25:16 IST" duration-ms="1861" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[testuser1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://google.com]]>
+                <![CDATA[password1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openWebsite -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Day6_TestNGTestcases.Parameterization_XML@1bb5a082]" started-at="2026-07-22T19:14:52 IST" name="closeBrowser" finished-at="2026-07-22T19:14:53 IST" duration-ms="1319" status="PASS">
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:16 IST" name="tearDown" finished-at="2026-07-23T16:25:17 IST" duration-ms="597" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- Day6_TestNGTestcases.Parameterization_XML -->
-    </test> <!-- Chrome Test -->
-    <test started-at="2026-07-22T19:14:46 IST" name="Firefox Test" finished-at="2026-07-22T19:15:05 IST" duration-ms="18390">
-      <class name="Day6_TestNGTestcases.Parameterization_XML">
-        <test-method signature="openWebsite(java.lang.String,java.lang.String)[pri:0, instance:Day6_TestNGTestcases.Parameterization_XML@61322f9d]" started-at="2026-07-22T19:14:46 IST" name="openWebsite" finished-at="2026-07-22T19:15:01 IST" duration-ms="14807" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:17 IST" name="setUp" finished-at="2026-07-23T16:25:20 IST" duration-ms="3625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:20 IST" name="doLogin" data-provider="dp" finished-at="2026-07-23T16:25:22 IST" duration-ms="1535" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[testuser2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://redbus.com]]>
+                <![CDATA[passwrod2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openWebsite -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Day6_TestNGTestcases.Parameterization_XML@61322f9d]" started-at="2026-07-22T19:15:01 IST" name="closeBrowser" finished-at="2026-07-22T19:15:05 IST" duration-ms="3516" status="PASS">
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:22 IST" name="tearDown" finished-at="2026-07-23T16:25:22 IST" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- Day6_TestNGTestcases.Parameterization_XML -->
-    </test> <!-- Firefox Test -->
-  </suite> <!-- Compatability Test -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:22 IST" name="setUp" finished-at="2026-07-23T16:25:26 IST" duration-ms="3915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:26 IST" name="doLogin" data-provider="dp" finished-at="2026-07-23T16:25:28 IST" duration-ms="1315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day6_TestNGTestcases.Parameterization_DataProvider@43bc63a3]" started-at="2026-07-23T16:25:28 IST" name="tearDown" finished-at="2026-07-23T16:25:28 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Day6_TestNGTestcases.Parameterization_DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

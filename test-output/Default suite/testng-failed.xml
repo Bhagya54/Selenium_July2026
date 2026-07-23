@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day6_TestNGTestcases.Assertion_TestNG">
+      <class name="Day6_TestNGTestcases.Parameterization_DataProvider">
         <methods>
-          <include name="verifyTitle"/>
-          <include name="doFailure"/>
-          <include name="doSkip"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="doLogin"/>
         </methods>
-      </class> <!-- Day6_TestNGTestcases.Assertion_TestNG -->
+      </class> <!-- Day6_TestNGTestcases.Parameterization_DataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
