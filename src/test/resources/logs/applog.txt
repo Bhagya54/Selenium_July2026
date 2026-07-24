@@ -1,0 +1,8 @@
+INFO    2026-07-24 13:48:19,178 [main] Day7_ReadProperties_Log4J.Log4J  - Test started
+INFO    2026-07-24 13:48:19,181 [main] Day7_ReadProperties_Log4J.Log4J  - Config Properties file has been loaded
+INFO    2026-07-24 13:48:22,898 [main] Day7_ReadProperties_Log4J.Log4J  - Chrome browser has been launched
+INFO    2026-07-24 13:48:24,668 [main] Day7_ReadProperties_Log4J.Log4J  - Navigated to url: https://facebook.com
+INFO    2026-07-24 13:48:24,669 [main] Day7_ReadProperties_Log4J.Log4J  - OR Properties file has been loaded
+INFO    2026-07-24 13:48:25,923 [main] Day7_ReadProperties_Log4J.Log4J  - Entered value: testuser1 into the element with keyword as :email_ID
+INFO    2026-07-24 13:48:26,107 [main] Day7_ReadProperties_Log4J.Log4J  - Entered value: password1 into the element with keyword as :password_NAME
+ERROR   2026-07-24 13:48:26,144 [main] Day7_ReadProperties_Log4J.Log4J  - Unable to click on the field: loginBtn_XPATH

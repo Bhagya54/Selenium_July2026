@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day6_TestNGTestcases.Parameterization_DataProvider">
+      <class name="Day7_ReadProperties_Log4J.Log4J">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="doLogin"/>
         </methods>
-      </class> <!-- Day6_TestNGTestcases.Parameterization_DataProvider -->
+      </class> <!-- Day7_ReadProperties_Log4J.Log4J -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
